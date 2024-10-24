@@ -102,10 +102,3 @@ ou
 docker compose down
 docker compose up -d
 ```
-
----
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
-
