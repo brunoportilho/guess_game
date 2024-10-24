@@ -92,6 +92,7 @@ Acessar a aplicação via browser na URL http://localhost:80
 - Reinicio de container implementado com `restart: always`.
 - Volume persistente para o Banco de Dados PostgreSQL `pg_data`
 
+---
 ## Em caso de qualquer alteração de código:
 Qualquer alteração realizada no código pode ser aplicada executando os comandos abaixo: 
 
