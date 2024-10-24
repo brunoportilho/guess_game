@@ -96,11 +96,5 @@ Acessar a aplicação via browser na URL http://localhost:80
 Qualquer alteração realizada no código pode ser aplicada executando os comandos abaixo: 
 
 ```bash
-docker-compose down 
-docker-compose up -d 
-```
-ou 
-```bash
-docker compose down
-docker compose up -d
+docker-compose up --build -d
 ```
