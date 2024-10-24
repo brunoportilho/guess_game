@@ -80,8 +80,8 @@ Acessar a aplicação via browser na URL http://localhost:80
 ## Repositório
 
 - **yaml Docker Compose:** Arquivo `docker-compose.yml` localizado na raiz do projeto, utilizado para subir a aplicação.
-- **Backend:** Localizado na raiz do projeto, usado para montar a imagem com serviços do backend `backend.Dockerfile`
-- **Frontend:** Localizado na ./frontend, responsavel por montar a imagem Docker com os serviçõs do frontend `frontend.Dockerfile`
+- **Backend:** Localizado na raiz do projeto, usado para montar a imagem com serviços do backend `Dockerfile.back`
+- **Frontend:** Localizado na ./frontend, responsavel por montar a imagem Docker com os serviçõs do frontend `Dockerfile.front`
 - **Configuração do NGINX:** Localizado na ./frontend, é copiado para o NGINX no momento de criação e contém as configurações de rotas e balanceamento de carga. `nginx.conf`
 
 ---
@@ -96,5 +96,5 @@ Acessar a aplicação via browser na URL http://localhost:80
 Qualquer alteração realizada no código pode ser aplicada executando os comandos abaixo: 
 
 ```bash
-docker-compose up --build -d
+docker-compose up -d --pull always
 ```
