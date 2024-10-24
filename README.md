@@ -77,7 +77,7 @@ Acessar a aplicação via browser na URL http://localhost:80
 - **`Guess`**: Classe responsável por gerenciar a lógica de comparação entre a senha e a tentativa do jogador.
 - **`WrongAttempt`**: Exceção personalizada que é levantada quando a tentativa está incorreta.
 
-## Repositório
+### Repositório
 
 - **yaml Docker Compose:** Arquivo `docker-compose.yml` localizado na raiz do projeto, utilizado para subir a aplicação.
 - **Backend:** Localizado na raiz do projeto, usado para montar a imagem com serviços do backend `backend.Dockerfile`
