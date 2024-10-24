@@ -87,8 +87,10 @@ Acessar a aplicação via browser na URL http://localhost:80
 ---
 ## Melhorias implementadas
 
-- Aplicação rodando em container Docker.
-- Adicionado NGINX para proxy reverso e balanceamento de carga para o backend.
+- Facilidade de Atualização: aplicação rodando em container Docker, pode ser atualizada rapidamente.
+- Adicionado NGINX para proxy reverso e balanceamento de carga.
+- Reinicio de container implementado com `restart: always`.
+- Volume persistente para o Banco de Dados PostgreSQL
 
 ## Em caso de qualquer alteração de código:
 Qualquer alteração realizada no código pode ser aplicada executando os comandos abaixo: 
