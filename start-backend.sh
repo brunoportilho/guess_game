@@ -9,5 +9,5 @@
 # export FLASK_DB_HOST="postgres"
 # export FLASK_DB_PORT="5432"
 
+# Comentado e comando usado no CMD do backend.Dockerfile
 # Run app.py when the container launches
-flask run --host=0.0.0.0 --port=5000

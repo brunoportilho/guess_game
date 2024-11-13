@@ -8,7 +8,7 @@ WORKDIR /app
 ARG REACT_APP_BACKEND_URL
 ENV REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL:-http://localhost/api}
 
-COPY package*.json ./
+COPY package*.json .
 RUN npm install
 
 COPY . .
@@ -16,11 +16,8 @@ RUN npm run build
 
 FROM nginx:alpine
 
-COPY nginx.conf /etc/nginx/nginx.conf
+# COPY nginx.conf /etc/nginx/nginx.conf # Feito no volume do compose
 COPY --from=build /app/build /usr/share/nginx/html
-
-ARG REACT_APP_BACKEND_URL
-ENV REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL:-http://localhost/api}
 
 EXPOSE 80
 
